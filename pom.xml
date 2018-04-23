@@ -39,7 +39,9 @@
 	  <!-- Project Dependencies -->
 	  <commons-lang3.version>3.5</commons-lang3.version>
 	  <commons-math3.version>3.2</commons-math3.version>
-	  <librairy.modeler.version>[1.0,)</librairy.modeler.version>
+	  <guava.version>24.1-jre</guava.version>
+	  <jackson.version>2.8.10</jackson.version>
+	  <librairy.version>[1.0,)</librairy.version>
 	  <junit.version>4.12</junit.version>
 	  <logback.version>1.1.3</logback.version>
 	  <unirest.version>1.4.9</unirest.version>
@@ -51,16 +53,32 @@
 			  <!-- librAIry -->
 			  <dependency>
 				  <groupId>org.librairy</groupId>
-				  <artifactId>modeler-service-facade</artifactId>
-				  <version>${librairy.modeler.version}</version>
+				  <artifactId>nlp-service-facade</artifactId>
+				  <version>${librairy.version}</version>
 			  </dependency>
-			  
+			  <dependency>
+				  <groupId>org.librairy</groupId>
+				  <artifactId>modeler-service-facade</artifactId>
+				  <version>${librairy.version}</version>
+			  </dependency>
 
 			  <!-- Http Libraries -->
 			  <dependency>
 				  <groupId>com.mashape.unirest</groupId>
 				  <artifactId>unirest-java</artifactId>
 				  <version>${unirest.version}</version>
+			  </dependency>
+			  <dependency>
+				  <groupId>com.fasterxml.jackson.core</groupId>
+				  <artifactId>jackson-databind</artifactId>
+				  <version>${jackson.version}</version>
+			  </dependency>
+
+			  <!-- Google Guava -->
+			  <dependency>
+				  <groupId>com.google.guava</groupId>
+				  <artifactId>guava</artifactId>
+				  <version>${guava.version}</version>
 			  </dependency>
 
 			  <!-- Log Libraries -->
@@ -102,6 +120,10 @@
 		  <!-- librAIry -->
 		  <dependency>
 			  <groupId>org.librairy</groupId>
+			  <artifactId>nlp-service-facade</artifactId>
+		  </dependency>
+		  <dependency>
+			  <groupId>org.librairy</groupId>
 			  <artifactId>modeler-service-facade</artifactId>
 		  </dependency>
 
@@ -109,6 +131,16 @@
 		  <dependency>
 			  <groupId>com.mashape.unirest</groupId>
 			  <artifactId>unirest-java</artifactId>
+		  </dependency>
+		  <dependency>
+			  <groupId>com.fasterxml.jackson.core</groupId>
+			  <artifactId>jackson-databind</artifactId>
+		  </dependency>
+
+		  <!-- Google Guava -->
+		  <dependency>
+			  <groupId>com.google.guava</groupId>
+			  <artifactId>guava</artifactId>
 		  </dependency>
 
 		  <!-- Commons Libraries -->
@@ -220,14 +252,22 @@
 
 	<repositories>
 		<!-- librAIry Repository -->
-				  <repository>
-					  <id>modeler-service</id>
-					  <url>https://raw.github.com/librairy/modeler-service-facade/mvn-repo/</url>
-					  <snapshots>
-						  <enabled>true</enabled>
-						  <updatePolicy>always</updatePolicy>
-					  </snapshots>
-				  </repository>
+		  <repository>
+			  <id>modeler-service</id>
+			  <url>https://raw.github.com/librairy/modeler-service-facade/mvn-repo/</url>
+			  <snapshots>
+				  <enabled>true</enabled>
+				  <updatePolicy>always</updatePolicy>
+			  </snapshots>
+		  </repository>
+		<repository>
+			<id>nlp-service</id>
+			<url>https://raw.github.com/librairy/nlp-service-facade/mvn-repo/</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
 		
 	</repositories>
 

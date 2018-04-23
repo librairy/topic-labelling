@@ -18,6 +18,11 @@ public class Word {
     public Word() {
     }
 
+    public Word(String value, Double score) {
+        this.value = value;
+        this.score = score;
+    }
+
     public String getValue() {
         return value;
     }
