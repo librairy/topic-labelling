@@ -1,0 +1,104 @@
+{
+  "elements": [
+    {
+      "value": "window",
+      "score": 0.014405511674031804
+    },
+    {
+      "value": "windows",
+      "score": 0.00800306204112878
+    },
+    {
+      "value": "server",
+      "score": 0.007202755837015902
+    },
+    {
+      "value": "run",
+      "score": 0.006993980305508195
+    },
+    {
+      "value": "support",
+      "score": 0.005462959741118341
+    },
+    {
+      "value": "system",
+      "score": 0.0049062249904311215
+    },
+    {
+      "value": "display",
+      "score": 0.0049062249904311215
+    },
+    {
+      "value": "work",
+      "score": 0.004836633146595219
+    },
+    {
+      "value": "motif",
+      "score": 0.004732245380841366
+    },
+    {
+      "value": "application",
+      "score": 0.004697449458923414
+    },
+    {
+      "value": "software",
+      "score": 0.004662653537005463
+    },
+    {
+      "value": "file",
+      "score": 0.0044538780054977556
+    },
+    {
+      "value": "program",
+      "score": 0.004349490239743902
+    },
+    {
+      "value": "problem",
+      "score": 0.004349490239743902
+    },
+    {
+      "value": "manager",
+      "score": 0.0043146943178259504
+    },
+    {
+      "value": "microsoft",
+      "score": 0.003827551410974634
+    },
+    {
+      "value": "network",
+      "score": 0.0036535718013848777
+    },
+    {
+      "value": "include",
+      "score": 0.0036535718013848777
+    },
+    {
+      "value": "set",
+      "score": 0.0036187758794669267
+    },
+    {
+      "value": "sun",
+      "score": 0.003549184035631024
+    },
+    {
+      "value": "user",
+      "score": 0.0034447962698771705
+    },
+    {
+      "value": "version",
+      "score": 0.003410000347959219
+    },
+    {
+      "value": "memory",
+      "score": 0.003410000347959219
+    },
+    {
+      "value": "mouse",
+      "score": 0.003375204426041268
+    },
+    {
+      "value": "client",
+      "score": 0.003375204426041268
+    }
+  ]
+}

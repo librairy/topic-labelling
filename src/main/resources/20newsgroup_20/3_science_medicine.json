@@ -1,0 +1,104 @@
+{
+  "elements": [
+    {
+      "value": "msg",
+      "score": 0.004837647058823529
+    },
+    {
+      "value": "food",
+      "score": 0.004687058823529411
+    },
+    {
+      "value": "patient",
+      "score": 0.0041035294117647055
+    },
+    {
+      "value": "study",
+      "score": 0.003952941176470588
+    },
+    {
+      "value": "doctor",
+      "score": 0.00384
+    },
+    {
+      "value": "good",
+      "score": 0.003727058823529412
+    },
+    {
+      "value": "problem",
+      "score": 0.0036705882352941178
+    },
+    {
+      "value": "effect",
+      "score": 0.0035011764705882354
+    },
+    {
+      "value": "disease",
+      "score": 0.0035011764705882354
+    },
+    {
+      "value": "thing",
+      "score": 0.0034258823529411766
+    },
+    {
+      "value": "article",
+      "score": 0.003407058823529412
+    },
+    {
+      "value": "treatment",
+      "score": 0.003275294117647059
+    },
+    {
+      "value": "medical",
+      "score": 0.0032564705882352943
+    },
+    {
+      "value": "find",
+      "score": 0.0032
+    },
+    {
+      "value": "work",
+      "score": 0.0031058823529411766
+    },
+    {
+      "value": "year",
+      "score": 0.003030588235294118
+    },
+    {
+      "value": "science",
+      "score": 0.002898823529411765
+    },
+    {
+      "value": "case",
+      "score": 0.002898823529411765
+    },
+    {
+      "value": "ive",
+      "score": 0.0027858823529411767
+    },
+    {
+      "value": "yeast",
+      "score": 0.0026164705882352943
+    },
+    {
+      "value": "give",
+      "score": 0.0025976470588235296
+    },
+    {
+      "value": "candida",
+      "score": 0.002578823529411765
+    },
+    {
+      "value": "read",
+      "score": 0.0025411764705882355
+    },
+    {
+      "value": "medicine",
+      "score": 0.0024847058823529414
+    },
+    {
+      "value": "infection",
+      "score": 0.0024847058823529414
+    }
+  ]
+}

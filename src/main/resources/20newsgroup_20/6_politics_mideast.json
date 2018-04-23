@@ -1,0 +1,104 @@
+{
+  "elements": [
+    {
+      "value": "israel",
+      "score": 0.0071683737986848765
+    },
+    {
+      "value": "armenian",
+      "score": 0.005903831562974204
+    },
+    {
+      "value": "turkish",
+      "score": 0.005856411229135053
+    },
+    {
+      "value": "jews",
+      "score": 0.004615579160343956
+    },
+    {
+      "value": "israeli",
+      "score": 0.004386380880121396
+    },
+    {
+      "value": "armenians",
+      "score": 0.004188796155791603
+    },
+    {
+      "value": "arab",
+      "score": 0.0037541097622660596
+    },
+    {
+      "value": "kill",
+      "score": 0.003746206373292868
+    },
+    {
+      "value": "jewish",
+      "score": 0.003746206373292868
+    },
+    {
+      "value": "state",
+      "score": 0.003667172483560951
+    },
+    {
+      "value": "war",
+      "score": 0.0034853945371775418
+    },
+    {
+      "value": "government",
+      "score": 0.003445877592311583
+    },
+    {
+      "value": "turks",
+      "score": 0.0033589403136064745
+    },
+    {
+      "value": "year",
+      "score": 0.003232486090035407
+    },
+    {
+      "value": "armenia",
+      "score": 0.003192969145169449
+    },
+    {
+      "value": "give",
+      "score": 0.003050708143651998
+    },
+    {
+      "value": "attack",
+      "score": 0.0030032878098128477
+    },
+    {
+      "value": "village",
+      "score": 0.0029795776428932727
+    },
+    {
+      "value": "article",
+      "score": 0.0029637708649468894
+    },
+    {
+      "value": "world",
+      "score": 0.0027977996965098634
+    },
+    {
+      "value": "muslim",
+      "score": 0.0027740895295902883
+    },
+    {
+      "value": "turkey",
+      "score": 0.0026871522508851798
+    },
+    {
+      "value": "fact",
+      "score": 0.002489567526555387
+    },
+    {
+      "value": "muslims",
+      "score": 0.0024816641375821954
+    },
+    {
+      "value": "genocide",
+      "score": 0.0024816641375821954
+    }
+  ]
+}

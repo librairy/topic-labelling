@@ -1,0 +1,104 @@
+{
+  "elements": [
+    {
+      "value": "key",
+      "score": 0.01451867438190426
+    },
+    {
+      "value": "government",
+      "score": 0.008010821372210115
+    },
+    {
+      "value": "chip",
+      "score": 0.007379574659953408
+    },
+    {
+      "value": "encryption",
+      "score": 0.00679341699857218
+    },
+    {
+      "value": "clipper",
+      "score": 0.006267378071691591
+    },
+    {
+      "value": "system",
+      "score": 0.005515893890433606
+    },
+    {
+      "value": "phone",
+      "score": 0.005395656421432329
+    },
+    {
+      "value": "law",
+      "score": 0.004298489516795671
+    },
+    {
+      "value": "bit",
+      "score": 0.004298489516795671
+    },
+    {
+      "value": "nsa",
+      "score": 0.003907717742541519
+    },
+    {
+      "value": "escrow",
+      "score": 0.003787480273540242
+    },
+    {
+      "value": "work",
+      "score": 0.0035019162846622078
+    },
+    {
+      "value": "algorithm",
+      "score": 0.0034568272337867287
+    },
+    {
+      "value": "thing",
+      "score": 0.0034267678665364093
+    },
+    {
+      "value": "security",
+      "score": 0.0032313819794093333
+    },
+    {
+      "value": "give",
+      "score": 0.0031712632449086946
+    },
+    {
+      "value": "public",
+      "score": 0.0029458179905312992
+    },
+    {
+      "value": "number",
+      "score": 0.002855639888780341
+    },
+    {
+      "value": "information",
+      "score": 0.0027804914706545426
+    },
+    {
+      "value": "datum",
+      "score": 0.002765461787029383
+    },
+    {
+      "value": "privacy",
+      "score": 0.0026903133689035845
+    },
+    {
+      "value": "good",
+      "score": 0.0026903133689035845
+    },
+    {
+      "value": "find",
+      "score": 0.002615164950777786
+    },
+    {
+      "value": "crypto",
+      "score": 0.002570075899902307
+    },
+    {
+      "value": "secure",
+      "score": 0.0024949274817765085
+    }
+  ]
+}

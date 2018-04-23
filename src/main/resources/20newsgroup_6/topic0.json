@@ -1,0 +1,104 @@
+{
+  "elements": [
+    {
+      "value": "israel",
+      "score": 0.006662806014980177
+    },
+    {
+      "value": "armenian",
+      "score": 0.004950967602344391
+    },
+    {
+      "value": "turkish",
+      "score": 0.004849148217206204
+    },
+    {
+      "value": "jews",
+      "score": 0.004690055427927785
+    },
+    {
+      "value": "war",
+      "score": 0.004263686752661622
+    },
+    {
+      "value": "jewish",
+      "score": 0.00411095767495434
+    },
+    {
+      "value": "israeli",
+      "score": 0.003894591481535691
+    },
+    {
+      "value": "state",
+      "score": 0.0038500455005377335
+    },
+    {
+      "value": "kill",
+      "score": 0.0038500455005377335
+    },
+    {
+      "value": "armenians",
+      "score": 0.003512768787267486
+    },
+    {
+      "value": "arab",
+      "score": 0.0033218574401333834
+    },
+    {
+      "value": "year",
+      "score": 0.0031627646508549647
+    },
+    {
+      "value": "muslim",
+      "score": 0.0030864001120013236
+    },
+    {
+      "value": "article",
+      "score": 0.003048217842574503
+    },
+    {
+      "value": "government",
+      "score": 0.0030418541310033662
+    },
+    {
+      "value": "give",
+      "score": 0.0029973081500054093
+    },
+    {
+      "value": "world",
+      "score": 0.0029909444384342725
+    },
+    {
+      "value": "country",
+      "score": 0.002895488764867221
+    },
+    {
+      "value": "turks",
+      "score": 0.0028891250532960843
+    },
+    {
+      "value": "attack",
+      "score": 0.002876397630153811
+    },
+    {
+      "value": "turkey",
+      "score": 0.0028318516491558535
+    },
+    {
+      "value": "armenia",
+      "score": 0.0027682145334444862
+    },
+    {
+      "value": "history",
+      "score": 0.0027109411293042554
+    },
+    {
+      "value": "village",
+      "score": 0.002691849994590845
+    },
+    {
+      "value": "man",
+      "score": 0.0026154854557372043
+    }
+  ]
+}
