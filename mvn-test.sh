@@ -1,0 +1,1 @@
+mvn -DargLine="-Xmx8192m" -Dtest=$1 test
