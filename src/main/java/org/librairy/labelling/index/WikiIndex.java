@@ -1,8 +1,14 @@
 package org.librairy.labelling.index;
 
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.TokenFilter;
 import org.apache.lucene.analysis.Tokenizer;
+import org.apache.lucene.analysis.core.LowerCaseFilter;
+import org.apache.lucene.analysis.core.StopAnalyzer;
+import org.apache.lucene.analysis.core.StopFilter;
 import org.apache.lucene.analysis.core.WhitespaceTokenizer;
+import org.apache.lucene.analysis.standard.StandardFilter;
+import org.apache.lucene.analysis.standard.StandardTokenizer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.StringField;
@@ -46,8 +52,12 @@ public class WikiIndex {
     private Analyzer analyzer = new Analyzer() {
         @Override
         protected TokenStreamComponents createComponents(String s) {
-            Tokenizer tokenizer = new WhitespaceTokenizer();
-            return new TokenStreamComponents(tokenizer);
+            Tokenizer tokenizer = new StandardTokenizer();
+
+            TokenFilter filter = new StandardFilter(tokenizer);
+            filter = new LowerCaseFilter(filter);
+            filter = new StopFilter(filter, StopAnalyzer.ENGLISH_STOP_WORDS_SET );
+            return new TokenStreamComponents(tokenizer,filter);
         }
     };
     private DirectoryReader reader;
