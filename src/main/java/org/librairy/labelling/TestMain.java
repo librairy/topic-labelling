@@ -28,6 +28,7 @@ public class TestMain {
     public static void main(String[] args) {
 
         String folder                                       = "20newsgroup_20";
+
         LabellingService labellingService                   = new DensityLabellingService();
         DocumentsPerTopicService documentsPerTopicService   = new DocumentsPerTopicService("20newsgroup.csv.gz");
         FilteringLinesService filteringLinesService         = new FilteringLinesService();

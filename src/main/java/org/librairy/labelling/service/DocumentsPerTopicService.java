@@ -80,7 +80,6 @@ public class DocumentsPerTopicService {
 
                     }
                 });
-                if (counter.getAndIncrement() == 1000) break;
             }
             executor.shutdown();
             executor.awaitTermination(1, TimeUnit.HOURS);
