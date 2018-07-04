@@ -13,9 +13,9 @@ public class Relevance<T> {
 
     private T element;
 
-    private float score;
+    private Double score;
 
-    public Relevance(T element, float score) {
+    public Relevance(T element, Double score) {
         this.element = element;
         this.score = score;
     }
@@ -24,7 +24,7 @@ public class Relevance<T> {
         return element;
     }
 
-    public float getScore() {
+    public Double getScore() {
         return score;
     }
 

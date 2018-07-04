@@ -14,19 +14,27 @@ import java.util.zip.GZIPOutputStream;
 public class JsonlWriter<T> {
 
     private static final Logger LOG = LoggerFactory.getLogger(JsonlWriter.class);
-    private final File file;
+    private File file;
 
     private BufferedWriter writer;
     private ObjectMapper jsonMapper = new ObjectMapper();
     private Class<T> type;
 
     public JsonlWriter(File jsonFile) throws IOException {
-        if (jsonFile.exists()) jsonFile.delete();
-        if (!jsonFile.getParentFile().exists()) jsonFile.getParentFile().mkdirs();
-        this.file = jsonFile;
-        this.writer = new BufferedWriter(new OutputStreamWriter(new GZIPOutputStream(new FileOutputStream(jsonFile))));
+        initialize(jsonFile, true);
     }
 
+    public JsonlWriter(File jsonFile, Boolean gz) throws IOException {
+        initialize(jsonFile, gz);
+    }
+
+    private void initialize(File jsonFile, Boolean gz) throws IOException {
+        if (jsonFile.exists()) jsonFile.delete();
+        if (jsonFile.getParentFile() != null && !jsonFile.getParentFile().exists()) jsonFile.getParentFile().mkdirs();
+        this.file = jsonFile;
+
+        this.writer = gz? new BufferedWriter(new OutputStreamWriter(new GZIPOutputStream(new FileOutputStream(jsonFile)))) : new BufferedWriter(new OutputStreamWriter(new FileOutputStream(jsonFile)));
+    }
 
     public void write(T data){
 

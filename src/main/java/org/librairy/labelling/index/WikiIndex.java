@@ -6,7 +6,6 @@ import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.core.LowerCaseFilter;
 import org.apache.lucene.analysis.core.StopAnalyzer;
 import org.apache.lucene.analysis.core.StopFilter;
-import org.apache.lucene.analysis.core.WhitespaceTokenizer;
 import org.apache.lucene.analysis.standard.StandardFilter;
 import org.apache.lucene.analysis.standard.StandardTokenizer;
 import org.apache.lucene.document.Document;
@@ -16,9 +15,11 @@ import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
-import org.apache.lucene.index.Term;
 import org.apache.lucene.queryparser.classic.QueryParser;
-import org.apache.lucene.search.*;
+import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.Query;
+import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.TopScoreDocCollector;
 import org.apache.lucene.search.similarities.BM25Similarity;
 import org.apache.lucene.store.FSDirectory;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -141,7 +142,47 @@ public class WikiIndex {
             return Arrays.stream(results.scoreDocs).parallel().map(sd -> {
                 try {
                     Document docIndexed     = reader.document(sd.doc);
-                    float score = sd.score;
+                    Double score = Double.valueOf(sd.score);
+
+                    WikiArticle article = new WikiArticle();
+
+                    article.setId(String.format(docIndexed.get("id")));
+                    article.setTitle(String.format(docIndexed.get("title")));
+                    article.setUrl(String.format(docIndexed.get("id")));
+
+                    return new Relevance<WikiArticle>(article,score);
+                } catch (Exception e) {
+                    LOG.warn("Error getting neighbour", e);
+                    return null;
+                }
+            }).filter(a -> a != null).collect(Collectors.toList());
+        }catch (Exception e){
+            throw new RuntimeException(e);
+        }
+    }
+
+    public List<Relevance<WikiArticle>> find(String id, Integer max){
+
+        try{
+            if (this.reader == null){
+                reader = DirectoryReader.open(directory);
+            }
+            TopScoreDocCollector collector = TopScoreDocCollector.create(max);
+            IndexSearcher searcher  = new IndexSearcher(reader);
+            searcher.setSimilarity(new BM25Similarity());
+
+            int size = reader.numDocs();
+
+            QueryParser parser = new QueryParser("id", analyzer);
+
+            Query query = parser.parse("https://en.wikipedia.org/wiki?curid="+id);
+            searcher.search(query, collector);
+            TopDocs results = collector.topDocs();
+
+            return Arrays.stream(results.scoreDocs).parallel().map(sd -> {
+                try {
+                    Document docIndexed     = reader.document(sd.doc);
+                    Double score = Double.valueOf(sd.score);
 
                     WikiArticle article = new WikiArticle();
 

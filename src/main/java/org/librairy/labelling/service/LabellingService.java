@@ -1,5 +1,6 @@
 package org.librairy.labelling.service;
 
+import org.librairy.labelling.model.Relevance;
 import org.librairy.labelling.model.Topic;
 
 import java.util.List;
@@ -10,6 +11,6 @@ import java.util.List;
 
 public interface LabellingService {
 
-    List<String> labelsOf(Topic topic);
+    List<Relevance<String>> labelsOf(List<Relevance<String>> words, List<String> context);
 
 }

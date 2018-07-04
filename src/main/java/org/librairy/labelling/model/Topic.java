@@ -15,6 +15,8 @@ public class Topic {
 
     private String id;
 
+    private List<String> labels;
+
     List<Word> elements;
 
     public Topic() {
@@ -36,10 +38,20 @@ public class Topic {
         this.elements = elements;
     }
 
+    public List<String> getLabels() {
+        return labels;
+    }
+
+    public void setLabels(List<String> labels) {
+        this.labels = labels;
+    }
+
     @Override
     public String toString() {
-        return "Topic '"+id+"' {" +
-                "elements=" + elements +
+        return "Topic{" +
+                "id='" + id + '\'' +
+                ", labels=" + labels +
+                ", elements=" + elements +
                 '}';
     }
 }
